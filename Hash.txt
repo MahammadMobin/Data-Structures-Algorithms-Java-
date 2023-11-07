@@ -1,0 +1,271 @@
+package bangla;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class Bangla {
+
+    public static void main(String[] args) {
+        
+        //syntex
+        Map<String,Integer> mp = new HashMap<>();
+        
+        // adding Elements
+        
+        mp.put("akash", 21);
+        mp.put("yash",16);
+        mp.put("lav",17);
+        mp.put("Risika",19);
+        mp.put("Harry", 18);      
+        // getting value of a key from a hashmap
+        
+        System.out.println(mp.get("yash"));
+       
+        
+        
+        //Changing/updating valur of a key in the hashmap
+        
+        mp.put("akash",25);
+        System.out.println(mp.get("akash"));
+        
+        // removing A pair from hashmap
+        
+        System.out.println(mp.remove("akash"));
+        
+        // cheaking if a key a key in the hashmap
+        
+        System.out.println(mp.containsKey("akash"));
+        System.out.println(mp.containsKey("yash"));
+        
+        // adding a new entry only if the new key doesnot exxist already
+        
+        mp.putIfAbsent("yash",30); // will not enter
+        mp.putIfAbsent("yashka",30); // will enter
+        
+        // set all keys in the hashmap
+        
+        System.out.println(mp.keySet());
+        
+        // get ALL VALUES IN THE HASHMAp
+        
+        System.out.println( mp.values());
+        
+        // get all entries in the hashmap 
+        
+        System.out.println(mp.entrySet());
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+package bangla;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+
+import java.util.Iterator;
+
+
+
+public class Bangla {
+
+    public static void main(String[] args) {
+        
+        //creating
+        HashSet<Integer> set = new HashSet<>();
+        
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(1); // list.add
+        
+        //size
+        
+        System.out.println ( "size is " +set.size());
+        
+        // println lla elemints
+        
+        System.out.println (set);
+        
+        // iterator
+        
+        Iterator it = set.iterator();
+        
+        while(it.hasNext()){
+            System.out.println (it.next());
+        }
+        
+        
+        
+        
+        
+       // if (set.contains(1)) {
+            
+         //   System.out.println ("set cointain 1 ");
+       // }
+        
+        //if (!set.contains(6)){
+            
+          //  System.out.println ("does not cointain");
+         
+        //}
+         
+        // delete 
+        
+      //  set.remove((1));
+      //  if (!set.contains(1)) {
+      ///      System.out.println ("does not exxist 1 - delete it");
+      //  }
+        }
+        
+     }
+
+================================================
+
+
+package bangla;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+
+import java.util.Iterator;
+
+public class Bangla {
+
+    public static void main(String[] args) {
+        
+        HashMap<String, Integer> map = new HashMap<>();
+        
+        // insertion
+        
+        map.put("India", 120);
+        map.put("us", 30);
+        map.put("China", 150);
+        
+        System.out.println (map);
+        
+        map.put("China",180);
+        System.out.println (map);
+        
+        // search
+        
+        if (map.containsKey("China")){
+            
+            System.out.println("key is present in the map");
+        }
+        else {
+            System.out.println ("key is not ");
+        }
+        
+        System.out.println (map.get("China")); // kry exist
+        
+        System.out.println (map.get("bsngla"));
+        
+        
+        int arr [] = {12, 15, 18};
+        for (int i = 0; i<3; i++){
+            System.out.println (arr[i] + "");
+        }
+        
+        System.out.println ();
+        
+        for (int val : arr){
+            System.out.println(val + "");
+        }
+        
+        System.out.println ();
+        }
+    }
+=========================================================
+
+
+package bangla;
+
+    import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+
+import java.util.Iterator;
+
+
+public class NewClass {
+    
+
+
+public class Bangla {
+
+    public static void main(String[] args) {
+        
+        //creating
+        HashSet<Integer> set = new HashSet<>();
+        
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(1); // list.add
+        
+        //size
+        
+        System.out.println ( "size is " +set.size());
+        
+        // println lla elemints
+        
+        System.out.println (set);
+        
+        // iterator
+        
+        Iterator it = set.iterator();
+        
+        while(it.hasNext()){
+            System.out.println (it.next());
+        }
+        
+        
+        
+        
+        
+       // if (set.contains(1)) {
+            
+         //   System.out.println ("set cointain 1 ");
+       // }
+        
+        //if (!set.contains(6)){
+            
+          //  System.out.println ("does not cointain");
+         
+        //}
+         
+        // delete 
+        
+      //  set.remove((1));
+      //  if (!set.contains(1)) {
+      ///      System.out.println ("does not exxist 1 - delete it");
+      //  }
+      
+      
+      
+      
+      for(Map. Entry<String, Integer> e : map.entrySet())
+          
+          System.out.println(e.getKey());
+          System.out.println(e.getValue());
+          
+    }
+        
+        
+     
+          
+          
+}
+
+
+    
+}
+====================================================
+
+
+
+

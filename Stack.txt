@@ -1,0 +1,259 @@
+
+package bangla;
+
+import java.util.Stack;
+public class Bangla {
+
+    public static void main(String[] args) {
+        
+        Stack<Integer> st = new Stack<>();
+        st.push (1); // push mean enter value
+        st.push (23);
+        st.push (90);
+        st.push  (5);
+        st.push ( 34);
+        
+        //peek \
+        System.out.println (  st.peek()); // keep mean took last value
+        System.out.println (st);
+        
+        st.pop(); // pop mean delete last value
+        System.out.println (st);
+        
+        System.out.println ("size is "+st.size());  // size  ber korwr jonno
+        
+        while (st.size()>4){  // 4 number value ki seta ber korbe
+            st.pop();
+        }
+        
+        System.out.println (st.peek());
+        System.out.println(st);
+        
+       
+        
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+package stackks;
+
+import java.util.Stack;
+import java.util.Scanner;
+
+
+public class Stackks {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        Stack <Integer> st= new Stack<>();
+        
+        int n;
+        System.out.println ("enter the number of elements: ");
+        n = sc.nextInt();
+        System.out.println (" Enter the elements :");
+        for (int i = 1; i<=n;i++){
+            int x = sc.nextInt();
+            st.push(x);
+        
+        }
+        System.out.println (st);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+package stackks;
+
+import java.util.Stack;
+import java.util.Scanner;
+
+
+public class Stackks {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        Stack <Integer> st= new Stack<>();
+        
+        st.push (1);
+        st.push(2);
+        st.push (3);
+        st.push (4);
+        st.push (5);
+        
+        System.out.println ( st);
+        
+        //reverse order
+        
+        //Stack<Integer> rt = new Stack<>();
+        //while (st.size()>0){
+            //int x = st.peek();
+            //rt.push(x);
+            //st.pop();
+            
+          //  rt.push(st.pop());
+            
+        
+        
+       //System.out.println (rt);
+    Stack<Integer> gt = new Stack<>();
+    while(st.size()>0){
+        gt.push(st.pop());
+    }
+        
+     Stack<Integer> rt = new Stack<>();
+     while (gt.size()>0){
+         rt.push(gt.pop());
+    }
+    System.out.println(rt);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+insertion in stack = add number
+
+package stackks;
+
+import java.util.Stack;
+import java.util.Scanner;
+
+
+public class Stackks {
+
+    public static void main(String[] args) {
+        
+        Stack <Integer> st= new Stack<>();
+        
+        st.push (1);
+        st.push(2);
+        st.push (3);
+        st.push (4);
+        st.push (5);
+        
+        System.out.println ( st);
+        int idx = 7;
+        int x = 12;
+        
+        Stack<Integer>  temp = new Stack<>();
+        while (st.size()>idx){
+            temp.push(st.pop());
+        }
+        
+     st.push(x);
+     while ( temp.size()>0){
+     st.push(temp.pop());
+     
+     }
+     System.out.println (st);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+add
+
+package stackks;
+
+import java.util.Stack;
+
+ 
+public class displayStacks {
+    public static void displayrec( Stack<Integer> s){
+        s.push(6);
+    }
+    
+    public static  void  main (String [] args){
+        Stack<Integer> st = new Stack<>();;
+        
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        
+        System.out.println (st);
+        
+        displayrec(st);
+        
+        System.out.println (st);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------
+reverse
+
+package stackks;
+
+import java.util.Stack;
+
+ 
+public class displayStacks {
+    public static void displayreverse( Stack<Integer> st){
+        if ( st.size()==0) return;
+        int top = st.pop();
+        System.out.println (top+ " ");
+        displayreverse(st);
+        st.push(top);
+        
+        
+    }
+    
+    public static  void  main (String [] args){
+        Stack<Integer> st = new Stack<>();
+        
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        
+     
+        
+        displayreverse(st);
+  
+    }
+}
+
+----------------------====------------
+
+
+package stackks;
+
+import java.util.Stack;
+
+ 
+public class displayStacks {
+    public static void displayreverse( Stack<Integer> st){
+        if ( st.size()==0) return;
+        int top = st.pop();
+        System.out.println (top+ " ");
+        displayreverse(st);
+        st.push(top);
+        
+        
+    }
+    
+    public static void displayrec (Stack<Integer> st){
+        if (st.size()==0) return;;
+        int top = st.pop();
+        displayrec(st);
+        System.out.print(top+" ");
+        st.push(top);
+        
+    }
+    
+    public static  void  main (String [] args){
+        Stack<Integer> st = new Stack<>();
+        
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        
+     
+        
+        displayrec(st);
+  
+    }
+}
+
+
